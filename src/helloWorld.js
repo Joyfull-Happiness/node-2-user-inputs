@@ -1,4 +1,4 @@
-const myName = process.argv[2];
+const myName = process.argv[3];
 
 if (myName) {
   console.log(`Greetings, ${myName}!`);
