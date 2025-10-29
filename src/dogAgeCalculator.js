@@ -27,7 +27,10 @@ let everyOtherYear = 5;
 
 let humanYears;
 
-//RESULTS BELOW
+//if the dogAge is 1 then the humanYears will be the same as humanYearOne
+//if the dog age is not 1 then check if it is 2, if it is 2 then the human years will = humanyearone +humanyeartwo
+//if the dog age is not 2 then check if it is greater than = to 3 , if it is then the human years will = huanyearone +humanyeartwo + the dog's age -2 * every other year
+//if the dog age is not greater than = to 3 , then it is 0 in human years
 if (dogAge === 1) {
   humanYears = humanYearOne;
 } else if (dogAge === 2) {
@@ -37,7 +40,7 @@ if (dogAge === 1) {
 } else {
   humanYears = 0;
 }
-
+// show back to the user``Your Dog, ${insert dogName}, is ${ insert dogAge} but that's ${insert humanYearscalculated from th if statement above} years old in dog years!`
 console.log(
   `Your Dog, ${dogName}, is ${dogAge} but that's ${humanYears} years old in dog years!`
 );
